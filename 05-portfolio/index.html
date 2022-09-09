@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Portfolio</title>
+
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <i class="fas fa-home"></i>
+
+            <ul>
+                <li><a class="nav-link" href="#welcome-section">Welcome</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="welcome-section">
+                <div class="welcome-container">
+
+                    <h1>Welcome to my page!</h1>
+                    <h2>András <span class="fam-name">Morauszki</span></h2>
+                    <div class="roles">
+                        <div class="role">
+                            <i class="far fa-chart-bar role-icon"></i>
+                            <h3 class="role-title">Social scientist</h3>
+                            <ul class="role-details">
+                                <li>Minority institutions</li>
+                                <li>Interorganizational networks</li>
+                                <li>National self-identification in censuses</li>
+                                <li>Mental mapping in borderlands</li>
+                                <li>Sociology of minorities</li>
+                            </ul>
+                        </div>
+                        <div class="role">
+                            <i class="fas fa-chalkboard-teacher role-icon"></i>
+                            <h3 class="role-title">Teacher</h3>
+                            <ul class="role-details">
+                                <li>Mathematical statistics</li>
+                                <li>Quantitative data analysis</li>
+                                <li>Statistical inference, hypothesis testing</li>
+                                <li>Multivariate methods</li>
+                            </ul>
+                        </div>
+                        <div class="role">
+                            <i class="fas fa-laptop-code role-icon"></i>
+                            <h3 class="role-title">Coding enthusiast</h3>
+                            <ul class="role-details">
+                                <li><i class="fab fa-r-project prog-icon"></i>R</li>
+                                <li><i class="fab fa-python prog-icon"></i>Python</li>
+                                <li><i class="fab fa-js-square prog-icon"></i>JavaScript</li>
+                                <li><i class="fab fa-html5 prog-icon"></i>HTML + <i
+                                        class="fab fa-css3-alt prog-icon"></i>CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h2 class="upper">My projects</h2>
+                <div id="projects-grid">
+                    <div class="project-tile">
+                        <a href="#" target="_blank">
+                            <!-- Képeket cserélni unsplash képekre -->
+                            <img
+                                src="https://images.unsplash.com/photo-1569682535081-3e826bee049b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80">
+                            <p class="project-title">Teaching materials</p>
+                            <!-- Link to Github repo with scripts -->
+                            <!-- Link a statisztika órai jegyzetekre -->
+                        </a>
+                    </div>
+                    <div class="project-tile">
+                        <a href="#" target="_blank">
+                            <img src="https://m.blog.hu/li/litfan/image/umberto-eco.png" height=70vh>
+                            <p class="project-title">Tribute page</p>
+                        </a>
+                    </div>
+                    <div class="project-tile">
+                        <a href="#" target="_blank">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Thomas_Bayes.gif/220px-Thomas_Bayes.gif">
+                            <p class="project-title">Shiny app (Bayes theorem)</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="contacts">
+                <h2>Feel free to get in touch!</h2>
+                <ul class="contacts-container">
+                    <li class="contact-link">
+                        <a id="profile-link" href="https://github.com/morauszkia" target="_blank"><i
+                                class="fab fa-github con-link"></i>
+                            <p>My Github profile</p>
+                        </a>
+                    </li>
+                    <li class="contact-link">
+                        <a id="facebook-link" href="#" target="_blank"><i class="fab fa-facebook con-link"></i>My
+                            <p>Facebook page</p>
+                        </a>
+                    </li>
+                    <li class="contact-link">
+                        <a id="gmail-address" href="#"><i class="fas fa-envelope con-link"></i>
+                            </p>My email address<p>
+
+                        </a>
+                    </li>
+                    <!-- Facebook, E-mail (private and work), work page, linkedin -->
+                </ul>
+            </section>
+        </main>
+    </body>
+
+</html>

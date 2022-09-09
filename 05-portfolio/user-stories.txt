@@ -1,0 +1,21 @@
+#1: Navbar
+User Story #6: id of navbar.
+User Story #7: at least one link that I can click on to navigate to different sections of the page.
+User Story #11: The navbar should always be at the top of the viewport.
+
+#2: Welcome section
+User Story #1: id of welcome-section
+User Story #2: h1 element with text
+User Story #10: height equal to the height of the viewport.
+
+#3: Projects section
+User Story #3: id of projects
+User Story #4: at least one element with a class of project-tile
+User Story #5: at least one link to a project
+
+#4: Links
+User Story #8: id of profile-link, which opens my GitHub or FCC profile in a new tab.
+
+#5: Misc
+User Story #9: My portfolio should have at least one media query.
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>R basics</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <header><i class="fab fa-r-project"></i>R basics</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Data_types_and_structures">Data types and structures</a></li>
+                <li><a class="nav-link" href="#Printing_with_R">Printing with R</a></li>
+                <li><a class="nav-link" href="#Packages">Packages</a></li>
+                <li><a class="nav-link" href="#Learn_more">Learn more</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>R is a language and environment for statistical computing and graphics. It is a GNU project
+                    similar to the S language and environment which was developed at Bell Laboratories by John Chambers
+                    and colleagues. R provides a wide variety of statistical and graphical techniques, and is highly
+                    extensible. One of R’s strengths is the ease with which well-designed publication-quality plots can
+                    be produced, including mathematical symbols and formulae where needed. Great care has been taken
+                    over the defaults for the minor design choices in graphics, but the user retains full control.</p>
+                <p>R is available as Free Software under the terms of the Free Software Foundation’s GNU General Public
+                    License in source code form. It compiles and runs on a wide variety of UNIX platforms and similar
+                    systems (including FreeBSD and Linux), Windows and MacOS.</p>
+                <p>R is an integrated suite of software facilities for data manipulation, calculation and graphical
+                    display. It includes
+                <ul>
+                    <li>an effective data handling and storage facility,</li>
+                    <li>a suite of operators for calculations on arrays, in particular matrices,</li>
+                    <li>a large, coherent, integrated collection of intermediate tools for data analysis,</li>
+                    <li>graphical facilities for data analysis and display either on-screen or on hardcopy, and</li>
+                    <li>a well-developed, simple and effective programming language which includes conditionals, loops,
+                        user-defined recursive functions and input and output facilities.</li>
+                </ul>
+                </p>
+            </section>
+            <section class="main-section" id="Data_types_and_structures">
+                <header>Data types and structures</header>
+                <p>R has 6 basic data types out of which the five most important are listed.</p>
+                <ul>
+                    <li>character ("abc", "John", "This is a sentence.")</li>
+                    <li>numeric (real: 2, 5, 100, float: 2.5, 3.14)</li>
+                    <li>integer (2L)</li>
+                    <li>logical (TRUE and FALSE)</li>
+                    <li>complex (2+5i)</li>
+                </ul>
+                <p>R has many data structures as well that can contain the above mentioned data types. The most
+                    important are:</p>
+                <ul>
+                    <li>atomic vectors: a homogeneous 1d data type</li>
+                    <li>lists: a (potentially) heterogeneous 2d data type</li>
+                    <li>matrix: 2d data structure consisting of homogeneous data</li>
+                    <li>factors: for cathegorical data</li>
+                    <li>data frames: consisting of vectors of equal length</li>
+                </ul>
+                <p>R has functions to get information about the data:</p>
+                <ul>
+                    <li><code>class()</code> - the type of object (data structure e.g. matrix, df, list) </li>
+                    <li><code>typeof()</code> - the type of data within object (numeric, integer, logical, etc.)</li>
+                    <li><code>length()</code> - to get the number of items within data structure</li>
+                    <li><code>dim()</code> - to get the dimensions (length or number of rows and columns)</li>
+                    <li><code>str()</code> - the basic structure of the object (e.g. type of columns of data frame)</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Printing_with_R">
+                <header>Printing with R</header>
+                <p>R has autoprint. So calling an object by name automatically prints its contents.</p>
+                <p>In addition R has several functions with various parameters for more complex printing.
+                <ul>
+                    <li><code>print()</code> - this is the generic print function with several useful parameters, such
+                        as 'quote' to remove quotation marks (default is TRUE)</li>
+                    <li><code>paste()</code> - this makes it possible to pass more than one argument, and paste them
+                        together using separator 'sep'. The result can also be stored in a variable</li>
+                    <li><code>cat()</code> - is only for printing, and it accepts several arguments, and prints strings
+                        without quotation marks.</li>
+                </ul>
+                </p>
+            </section>
+            <section class="main-section" id="Packages">
+                <header>Packages</header>
+                <p>In addition to the basic functions included in the <code>base</code> package, the functionality of R
+                    can be enhanced by several powerful packages. There is a package for almost any problem that someone
+                    dealing with statistics might encounter. Some of the most popular packages are dplyr, ggplot2,
+                    xlsx2, and R has its own package rmarkdown to produce markdown reports with actual code running in
+                    the background and supplying the results that one wants to present.</p>
+                <p>These resources combined provide all the necessary tools to read, tidy, manipulate, analyze data, and
+                    to present the results in a compelling form.</p>
+            </section>
+            <section class="main-section" id="Learn_more">
+                <header>Learn more</header>
+                <p>For more information regarding R, visit <a href="cran.r-project.org">CRAN</a> (Comprehensive R
+                    Archive Network)!</p>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+</html>

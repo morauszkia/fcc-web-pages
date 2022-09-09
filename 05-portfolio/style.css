@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap");
+
+/* -----------------------------------*/
+/* BASIC SETUP */
+/* -----------------------------------*/
+
+:root {
+  --main-green: #57ac99;
+  --light-green: #79bdae;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -----------------------------------*/
+/* RECURRING ELEMENTS */
+/* -----------------------------------*/
+
+h1 {
+  font-size: 50px;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+/* -----------------------------------*/
+/* NAVBAR */
+/* -----------------------------------*/
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+nav i {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 30px;
+}
+nav ul {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+nav ul li {
+  display: block;
+  float: left;
+}
+nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  font-size: 23px;
+  padding: 15px 40px;
+  transition: all 0.5s ease;
+}
+nav ul li a:hover {
+  color: var(--main-green);
+  border-bottom-color: var(--main-green);
+  text-shadow: 0 0 15px var(--light-green), 0 0 20px #fff;
+}
+
+#navbar.dark {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#navbar.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#navbar.active a {
+  color: var(--main-green);
+  padding: 15px 40px;
+}
+
+#navbar.active i {
+  color: var(--main-green);
+  transition: all 0.5s ease;
+}
+
+/* -----------------------------------*/
+/* Welcome section */
+/* -----------------------------------*/
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: hsl(207, 30%, 40%); */
+  color: #fff;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  text-align: center;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.welcome-container h1 {
+  text-shadow: 0 3 10px rgba(255, 255, 255, 0.9);
+}
+
+.fam-name {
+  text-transform: uppercase;
+}
+
+.welcome-container h2 {
+  color: hsl(0, 0%, 90%);
+  text-shadow: 0 3 7px rgba(255, 255, 255, 0.9);
+}
+
+.roles {
+  display: flex;
+  max-width: 1200px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.role {
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  height: 100%;
+  padding: 15px;
+}
+
+.role .role-icon {
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: var(--main-green);
+}
+
+.role .role-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: var(--light-green);
+}
+
+.role .role-details {
+  list-style: none;
+  line-height: 22px;
+}
+
+.role-details li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.prog-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+/* #welcome-section h3 {
+    font-size: 3vh;
+    color: hsl(0, 0%, 75%);
+    text-shadow: 0.1em 0.1em 0.07em hsla(0, 0%, 10%, 0.7);
+} */
+
+/* -----------------------------------*/
+/* Projects section */
+/* -----------------------------------*/
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: #fff;
+  text-align: center;
+}
+#projects h2 {
+  margin-top: 20px;
+  color: var(--main-green);
+  text-shadow: 0 0 10px var(--main-green);
+}
+#projects-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  max-width: 1200px;
+  align-self: center;
+  overflow: hidden;
+  padding: 20px 50px 100px 50px;
+}
+
+.project-tile {
+  background-color: var(--main-green);
+  width: 30%;
+  min-width: 300px;
+  max-width: 600px;
+  height: 50vh;
+  min-height: 400px;
+  max-height: 800px;
+  margin: 2% 1%;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.project-tile img {
+  display: block;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.project-tile p {
+  height: 100px;
+  background-color: var(--main-green);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 0.5px solid #fff;
+  padding: 20px 10px;
+  font-size: 22px;
+}
+
+.project-tile a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* -----------------------------------*/
+/* CONTACTS */
+/* -----------------------------------*/
+
+#contacts {
+  padding: 30px 0;
+  text-align: center;
+  background: #333;
+}
+
+#contacts h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: var(--main-green);
+  text-shadow: 0 0 10px var(--main-green);
+}
+
+.contacts-container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+.contact-link {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.contact-link a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-link a:hover {
+  opacity: 0.7;
+}
+
+.contact-link i {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  nav ul li {
+    float: none;
+  }
+}

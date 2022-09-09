@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>My Form</title>
+    </head>
+
+    <body>
+        <main class="container">
+            <h1 id="title">My Form</h1>
+
+            <p id="description">This Form is my second test at freeCodeCamp. Enjoy!</p>
+            <form id="survey-form" class="form">
+                <ul>
+                    <li class="form-input">
+                        <label id="name-label" for="name">Please enter your name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..." required>
+                    </li>
+                    <li class="form-input">
+                        <label id="email-label" for="email">Please enter your e-mail address:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </li>
+                    <li class="form-input">
+                        <label id="number-label" for="number">How old are you?</label>
+                        <input type="number" id="number" name="age" min="1" max="150" placeholder="30">
+                    </li>
+                    <li class="form-input">
+                        <label id="dropdown-label" for="dropdown">Gender</label>
+                        <select id="dropdown" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </li>
+                    <li class="form-input input-col">
+                        <p class="question">Please select your highest level of education</p>
+                        <div class="answers">
+                            <label for="primary">
+                                <input type="radio" name="edu-level" id="primary" value="primary">Primary
+                            </label>
+                            <label for="secondary">
+                                <input type="radio" name="edu-level" id="secondary" value="secondary">Secondary
+                            </label>
+                            <label for="tertiary">
+                                <input type="radio" name="edu-level" id="tertiary" value="tertiary">Tertiary
+                            </label>
+                        </div>
+                    </li>
+                    <li class="form-input input-col">
+                        <p class="question">Please select your areas of interest</p>
+                        <div class="answers">
+                            <label for="sci-fi">
+                                <input type="checkbox" name="genre" id="sci-fi" value="sci-fi">Science fiction
+                            </label>
+                            <label for="fantasy">
+                                <input type="checkbox" name="genre" id="fantasy" value="fantasy">Fantasy
+                            </label>
+                            <label for="horror">
+                                <input type="checkbox" name="genre" id="horror" value="horror">Horror
+                            </label>
+                        </div>
+                    </li>
+                    <li class="form-input input-col">
+                        <p class="question">In case you have additional comments</p>
+                        <textarea name="comment" form="survey-form"
+                            placeholder="Enter your comment here..."></textarea><br>
+                    </li>
+                </ul>
+                <input type="submit" class="button" id="submit" value="Submit">
+            </form>
+        </main>
+    </body>
